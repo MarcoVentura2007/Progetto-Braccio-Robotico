@@ -48,6 +48,25 @@ Integrazione con sistemi di visione artificiale o comandi vocali.
 
 Implementando sistemi appositi di intelligenza artificiale potremmo arrivare a far fare certi movimenti al braccio semplicemente facendo un gesto con la mano(questa idea ci è venuta ispirandoci a un progetto di una ex quinta)
 
+<h2> Approfondimento: funzionamento </h2>
+
+
+Il progetto nasce come estensione di un lavoro scolastico già esistente, con l’intento di migliorare la funzionalità, interattività e modularità.
+Interfaccia Utente (Web):
+- L’utente imposta i valori desiderati per ogni angolazione dei servomotori attraverso dei slider o input numerici.
+- I comandi vengono inviati in tempo reale tramite HTTP request al server Flask.
+
+Server Flask (Raspberry Pi):
+- Il server riceve i valori, li converte in stringhe formattate, e li invia via seriale USB all’Arduino.
+
+Arduino:
+- Riceve la stringa, divisa con una funzione simile a strtok(), e la converte in valori numerici interi.
+- I servomotori vengono poi controllati tramite la funzione servo.write() con il valore ricevuto.
+
+Movimento del Braccio:
+-I servomotori eseguono il movimento richiesto con precisione grazie alla modulazione del segnale PWM.
+- Il sistema è reattivo e preciso, con feedback visivo immediato.
+
 
 
 <h3> 6. Autori del Progetto </h3>
