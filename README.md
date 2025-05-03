@@ -2,24 +2,20 @@
 
 Documentazione del Progetto Arduino - Braccio Robotico con Controllo Bluetooth
 
-1. <h1> Descrizione Generale </h1>
+<b><h3> 1. Descrizione Generale </h3></b>
 Il progetto consiste nello sviluppo e miglioramento di un braccio robotico controllato tramite servomotori, con un'integrazione avanzata che permette il controllo via Bluetooth. Nasce come evoluzione di un progetto scolastico, con l’obiettivo di aumentarne le possibilità applicative.
 
 
 
-2. Obiettivi del Progetto
+<h3> 2. Obiettivi del Progetto </h3>
 Controllabilità Bluetooth: permettere il controllo del braccio robotico da qualunque dispositivo compatibile Bluetooth (es. joystick della PlayStation, smartphone, Raspberry Pi, ecc.).
-
-
 Interfaccia Web: aggiunta di un’interfaccia HTML per il controllo remoto da pagina web.
-
-
 Modularità: progettazione flessibile per sostituire il braccio o integrarlo con altri attuatori o motori.
 
 
 
 
-3. Componenti principali utilizzati
+<h3> 3. Componenti principali utilizzati </h3>
 Arduino uno r3: riceve comandi via seriale da Flask e controlla i servomotori.
 
 
