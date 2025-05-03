@@ -53,6 +53,7 @@ Implementando sistemi appositi di intelligenza artificiale potremmo arrivare a f
 <h3> 6. Autori del Progetto </h3>
 Candeloro Simone
 
+
 Fontana Andrea
 
 Uboldi Luca
